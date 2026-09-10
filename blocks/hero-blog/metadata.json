@@ -1,0 +1,18 @@
+{
+  "variantName": "hero-blog",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Full-bleed background image with a left-aligned white text overlay: large headline, one intro paragraph, and two inline CTA links.",
+  "contentPattern": "Two cells — an image cell and a text cell containing a heading, an intro paragraph, and up to two CTA link paragraphs.",
+  "usage": {
+    "pagesUsing": [
+      "/faq"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-10T01:53:04.015Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "hero-blog"
+  ]
+}

@@ -1,0 +1,39 @@
+/*
+ * Columns Featured — editorial teaser: large image + byline/heading.
+ * Stacked on mobile, 1:1 side-by-side on desktop.
+ * Values extracted from source .columns-featured computed styles.
+ */
+
+.columns-featured > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-featured img {
+  display: block;
+  width: 100%;
+}
+
+/* On mobile the image sits above the text (authored order already matches). */
+
+@media (width >= 900px) {
+  .columns-featured > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  /* Equal 1:1 columns (source cells: flex 1 1 0%). */
+  .columns-featured > div > div {
+    flex: 1 1 0;
+  }
+
+  /* Source downscales type at desktop: h2 44->36px, byline 22->18px. */
+  .columns-featured h2 {
+    font-size: 36px;
+  }
+
+  .columns-featured p {
+    font-size: 18px;
+  }
+}

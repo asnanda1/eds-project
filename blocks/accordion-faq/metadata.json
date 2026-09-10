@@ -1,0 +1,18 @@
+{
+  "variantName": "accordion-faq",
+  "baseBlock": "accordion",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Stack of bordered, full-width expandable rows. Each closed row shows a question and a chevron; expanding reveals the answer below a divider.",
+  "contentPattern": "Each row has two cells — a question (label) and an answer (body).",
+  "usage": {
+    "pagesUsing": [
+      "/faq"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-10T01:53:04.015Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "accordion-faq"
+  ]
+}

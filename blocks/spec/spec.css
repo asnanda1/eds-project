@@ -1,0 +1,38 @@
+/*
+ * Spec — key/value specifications list.
+ * Source renders this as plain default content: a bold label paragraph
+ * (<strong>, weight 700) with its value on the paragraph beneath, using the
+ * standard body type (22px / line-height 1.6, color var(--text-color)) and the
+ * default paragraph rhythm (0.8em top, 0.25em bottom). No dividers, no columns.
+ * Values extracted from source computed styles — see migration-work/spec-extracted.css.
+ */
+
+.spec {
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: 1.6;
+}
+
+/* rows and cells are plain block flow — no borders, gaps, or padding */
+.spec .spec-row,
+.spec .spec-label,
+.spec .spec-value {
+  margin: 0;
+  padding: 0;
+}
+
+/* label + value paragraphs keep the default content paragraph rhythm */
+.spec .spec-label p,
+.spec .spec-value p {
+  margin: 0.8em 0 0.25em;
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* the label is bold via its <strong> (weight 700), matching the source */
+.spec .spec-label strong {
+  font-weight: 700;
+}

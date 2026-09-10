@@ -1,0 +1,41 @@
+/*
+ * Hero Article — blog-post header: lead image, breadcrumb, title, byline.
+ *
+ * The source renders this header as default content: the lead image sits at its
+ * natural size (left-aligned in the content column, not cropped or forced full
+ * width), and the breadcrumb + byline are plain, dark, stacked paragraphs with
+ * default spacing. All values below are matched to the source's computed styles.
+ *
+ * The only real divergence from the global styles is that the source downscales
+ * type at >=900px (h1 55px -> 45px, body/byline 22px -> 18px); the global sheet
+ * keeps those constant, so this block re-introduces that downscale, scoped to
+ * the block only.
+ */
+
+/* Lead image: natural size, left-aligned, no crop.
+   main img already caps it at max-width:100% so it fits the column on mobile. */
+.hero-article .hero-article-image {
+  line-height: 0;
+}
+
+.hero-article .hero-article-image img {
+  display: block;
+}
+
+/* Breadcrumb + byline paragraphs render as default dark text (source color:
+   rgb(19,19,19) == --text-color), so no color override is needed. Spacing is
+   the default paragraph rhythm the source relies on. */
+
+/* Desktop: match the source's type downscale (>=900px). */
+@media (width >= 900px) {
+  .hero-article h1 {
+    font-size: 45px;
+    line-height: 1.25;
+  }
+
+  .hero-article .hero-article-breadcrumb,
+  .hero-article .hero-article-meta {
+    font-size: 18px; /* source byline/breadcrumb downscales to 18px at desktop */
+    line-height: 1.6;
+  }
+}

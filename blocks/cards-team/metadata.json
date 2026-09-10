@@ -1,0 +1,10 @@
+{
+  "variantName": "cards-team",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "A grid of bordered, center-aligned text-only people cards, each with a name heading, a bold job-title line, and a muted department line. One column on mobile scaling to three on desktop.",
+  "contentPattern": "Each row is one person; the body cell has a name heading, a job-title paragraph, and a department paragraph. No image.",
+  "usage": "Team roster / people directory grid.",
+  "options": [],
+  "memberVariantIds": ["cards-team"]
+}

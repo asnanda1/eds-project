@@ -1,0 +1,85 @@
+/*
+ * Columns Contact — "Let's connect": intro text | labelled contact details.
+ * Stacked on mobile/tablet, side-by-side (50/50) on desktop.
+ * Values extracted from source computed styles (see
+ * migration-work/columns-contact-extracted.css). The source downscales
+ * heading/body type at the desktop breakpoint, so sizes are set explicitly.
+ */
+
+/* --- Row: stacked on mobile/tablet --- */
+.columns-contact > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* --- Type (mobile/tablet sizes) --- */
+.columns-contact h2 {
+  margin: 35.2px 0 11px;
+  font-family: var(--heading-font-family);
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 55px;
+  color: var(--text-color);
+}
+
+.columns-contact h3 {
+  margin: 0 0 4px;
+  font-family: var(--heading-font-family);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 42.5px;
+  color: var(--text-color);
+}
+
+.columns-contact .columns-contact-col > *:first-child {
+  margin-top: 0;
+}
+
+.columns-contact p {
+  margin: 14.4px 0 4.5px;
+  font-family: var(--body-font-family);
+  font-size: 22px;
+  line-height: 35.2px;
+  color: var(--text-color);
+}
+
+.columns-contact a:any-link {
+  font-size: inherit;
+  font-weight: 400;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.columns-contact a:hover {
+  text-decoration: underline;
+}
+
+/* --- Desktop: side-by-side 50/50 + downscaled type --- */
+@media (width >= 900px) {
+  .columns-contact > div {
+    flex-direction: row;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .columns-contact > div > .columns-contact-col {
+    flex: 1 1 0%;
+  }
+
+  .columns-contact h2 {
+    margin: 28.8px 0 9px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .columns-contact h3 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .columns-contact p {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+}

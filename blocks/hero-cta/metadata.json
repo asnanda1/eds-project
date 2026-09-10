@@ -1,0 +1,10 @@
+{
+  "variantName": "hero-cta",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Full-bleed darkened background image with a left-aligned white text overlay: heading, paragraph, and a single CTA link.",
+  "contentPattern": "Two cells — an image cell and a text cell containing a heading, a paragraph, and one CTA link.",
+  "usage": "Closing call-to-action banner on editorial/blog pages, dark/inverse treatment.",
+  "options": [],
+  "memberVariantIds": ["hero-cta"]
+}

@@ -1,0 +1,10 @@
+{
+  "variantName": "spec",
+  "baseBlock": "table",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "A specifications list of bold label followed by its value on the line beneath, stacked vertically with light vertical spacing between rows. No table borders.",
+  "contentPattern": "Each row has two cells — a bold label and its value.",
+  "usage": "Product/article specification key-value list.",
+  "options": [],
+  "memberVariantIds": ["spec"]
+}

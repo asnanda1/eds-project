@@ -1,0 +1,10 @@
+{
+  "variantName": "tabs-testimonial",
+  "baseBlock": "tabs",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Interactive testimonial browser: a horizontal row of avatar-plus-name tab buttons above a bordered panel that swaps content when a tab is selected. The first tab is active by default.",
+  "contentPattern": "Each authored row is one testimonial; the first cell is the tab label (avatar + name + role) and the row content becomes the panel (avatar + quote).",
+  "usage": "Tabbed testimonial / people switcher.",
+  "options": [],
+  "memberVariantIds": ["tabs-testimonial"]
+}

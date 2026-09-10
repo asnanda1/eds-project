@@ -1,0 +1,96 @@
+/* Hero CTA — full-bleed dark closing banner with a darkened photo,
+   overlaid left-aligned white text (h2 + paragraph + single CTA link).
+   All values extracted from source computed styles. */
+
+/* Full-bleed: neutralise the section wrapper's max-width + horizontal padding.
+   Selector specificity intentionally beats the global `main > .section > div`. */
+main > .section > .hero-cta-wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+
+.hero-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+  min-height: 420px;
+  padding: 64px 24px;
+  border-radius: 12px;
+  overflow: clip;
+}
+
+/* Photo fills the block, sitting behind the scrim and text */
+.hero-cta picture {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-cta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* Dark scrim (rgba(0,0,0,.45)) so overlaid text stays legible */
+.hero-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgb(0 0 0 / 45%);
+}
+
+.hero-cta .hero-cta-content {
+  margin: 0;
+}
+
+.hero-cta h2 {
+  margin: 35.2px 0 11px;
+  color: var(--background-color);
+}
+
+.hero-cta p {
+  margin: 17.6px 0 5.5px;
+  color: var(--background-color);
+}
+
+/* CTA is a plain inline link in the source (not a button) */
+.hero-cta a:any-link {
+  color: var(--link-color);
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Fallback when authored without an image: drop the scrim, use dark text */
+.hero-cta.no-image::before {
+  background: none;
+}
+
+.hero-cta.no-image h2,
+.hero-cta.no-image p {
+  color: var(--text-color);
+}
+
+@media (width >= 900px) {
+  .hero-cta {
+    padding: 96px 32px;
+  }
+
+  .hero-cta h2 {
+    font-size: var(--heading-font-size-l); /* 36px */
+    line-height: 45px;
+    margin: 28.8px 0 9px;
+  }
+
+  .hero-cta p {
+    font-size: 18px;
+    line-height: 28.8px;
+    margin: 14.4px 0 4.5px;
+  }
+}

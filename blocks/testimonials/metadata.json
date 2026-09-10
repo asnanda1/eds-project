@@ -1,0 +1,10 @@
+{
+  "variantName": "testimonials",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Bordered quote cards, center-aligned, each with a small circular avatar, a quote, and a bold name plus a role line. One column on mobile scaling to three columns on desktop.",
+  "contentPattern": "Each row is one testimonial with two cells: an avatar image and a text cell whose first paragraph is the quote and remaining paragraphs are the name then role.",
+  "usage": "Community / customer testimonial grid.",
+  "options": [],
+  "memberVariantIds": ["testimonials"]
+}

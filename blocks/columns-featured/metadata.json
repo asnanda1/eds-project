@@ -1,0 +1,10 @@
+{
+  "variantName": "columns-featured",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Two-column featured teaser: a large image on one side, a byline line and a heading on the other. Stacks vertically on mobile, sits side-by-side on desktop.",
+  "contentPattern": "One row with two cells — an image cell and a text cell containing a byline paragraph and a heading.",
+  "usage": "Featured story / editorial teaser highlighting a single item.",
+  "options": [],
+  "memberVariantIds": ["columns-featured"]
+}

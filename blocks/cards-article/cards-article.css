@@ -1,0 +1,53 @@
+/*
+ * Cards Article — article teaser grid.
+ * Values extracted from source computed styles:
+ * https://main--eds-capstone-sudhansu--sudhansu-acharya.aem.live/ .cards-article
+ * Grid is fluid (auto-fill minmax 250px) matching source: 1 col @375,
+ * 2 @768, 3 @900–1024, 4 @1280+. Gap 24px at all breakpoints.
+ */
+
+.cards-article ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards-article ul > li {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgb(218 218 218);
+}
+
+.cards-article .cards-article-card-image {
+  line-height: 0;
+}
+
+.cards-article .cards-article-card-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cards-article .cards-article-card-body {
+  margin: 16px;
+}
+
+/* Date line and linked title share the source's 18px / 1.6 type. */
+.cards-article .cards-article-card-body p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.cards-article .cards-article-card-body a {
+  color: var(--link-color);
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-decoration: none;
+}

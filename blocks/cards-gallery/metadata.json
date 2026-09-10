@@ -1,0 +1,10 @@
+{
+  "variantName": "cards-gallery",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Edge-to-edge image grid with no visible card chrome; square-cropped photos, 2 columns on mobile scaling to 4 columns on desktop.",
+  "contentPattern": "Each row is a single image-only card; the block renders a responsive image grid.",
+  "usage": "Photo gallery / lookbook grid of image-only cards.",
+  "options": [],
+  "memberVariantIds": ["cards-gallery"]
+}

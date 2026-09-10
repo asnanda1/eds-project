@@ -1,0 +1,10 @@
+{
+  "variantName": "columns-contact",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Two-column contact block: a heading and intro paragraph on one side, and labelled contact details (email, phone, address with mailto/tel links) on the other. Stacks on mobile, side-by-side on desktop.",
+  "contentPattern": "One row with two text cells — an intro cell (heading + paragraph) and a details cell (labelled contact lines).",
+  "usage": "Contact / get-in-touch section.",
+  "options": [],
+  "memberVariantIds": ["columns-contact"]
+}

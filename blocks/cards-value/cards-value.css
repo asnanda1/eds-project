@@ -1,0 +1,51 @@
+/* Cards Value — "Our values" cards: image + bold title + description.
+   Matches source (.cards on about-us): bordered white cards in an
+   auto-fill grid, 16px inner margins, 4/3 cover image, 18px type. */
+
+.cards-value > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  gap: 24px;
+}
+
+.cards-value > ul > li {
+  background-color: var(--background-color);
+  border: 1px solid #dadada;
+  border-radius: 0;
+}
+
+.cards-value .cards-value-card-image {
+  margin: 16px;
+  line-height: 0;
+}
+
+.cards-value .cards-value-card-body {
+  margin: 16px;
+}
+
+/* card image: fills inner card width, 4/3 cover (source rendered 248x186) */
+.cards-value .cards-value-card-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cards-value .cards-value-card-body p {
+  margin: 0 0 4.5px;
+  font-size: 18px;
+  line-height: 28.8px;
+  color: var(--text-color);
+}
+
+.cards-value .cards-value-card-body p:first-child {
+  margin-top: 0;
+}
+
+.cards-value .cards-value-card-body strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color);
+}

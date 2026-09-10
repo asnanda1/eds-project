@@ -1,0 +1,10 @@
+{
+  "variantName": "hero-article",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Blog-post header: a full-width lead image, a small breadcrumb link row, a large H1 title, and stacked muted byline metadata (author, date, read time, category).",
+  "contentPattern": "Two cells — a lead image and a text cell with a breadcrumb paragraph (links), an H1, and several byline metadata paragraphs.",
+  "usage": "Article/blog-post page header.",
+  "options": [],
+  "memberVariantIds": ["hero-article"]
+}
