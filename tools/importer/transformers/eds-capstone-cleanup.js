@@ -16,6 +16,17 @@ export default function transform(hookName, element, payload) {
   if (hookName === TransformHook.beforeTransform) {
     // No modals/overlays/cookie banners present in captured DOM.
     // Header/footer live outside <main>; removal happens in afterTransform.
+
+    // Some source pages carry broken-image artifacts (img src="about:error")
+    // alongside a valid <picture>. Drop these so they don't emit runtime
+    // console errors (net::ERR_UNKNOWN_URL_SCHEME); the sibling <picture> stays.
+    element.querySelectorAll('img[src="about:error"], img[src^="about:"]').forEach((img) => {
+      const p = img.closest('p');
+      img.remove();
+      if (p && p.textContent.trim() === '' && p.querySelectorAll('img, picture, a').length === 0) {
+        p.remove();
+      }
+    });
   }
 
   if (hookName === TransformHook.afterTransform) {
